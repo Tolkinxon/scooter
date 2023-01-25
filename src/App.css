@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.app {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: calc(100vh);
+}
+
+.query {
+  width: 49%;
+  min-height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('components/images/city.png');
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  box-shadow: 2px 2px 2px 2px #03a9f4;
+}
+
+.messangers {
+  width: 50%;
+  height: 30%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.messangers button {
+  width: 100%;
+  height: 20%;
+  background: #fffdfd;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  padding-left: 25%;
+  text-align: left;
+  color: #4f4f4f;
+  font-size: 15px;
+  background: #fffdfd;
+}
+
+.messangers button:hover {
+  border: 2px solid #03a9f4;
+}
+.messangers i {
+  color: #03a9f4;
+}
+
+.messangers span {
+  margin-left: 10px;
+}
+
+.sign-upping {
+  width: 50%;
+  min-height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.taking-inform-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0px auto;
+  width: 50%;
+  height: 75%;
+}
+
+.taking-inform {
+  margin-top: 30px;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.taking-inform p,
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px 0px;
+}
+.taking-inform p {
+  margin-top: 10px;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: #4f4f4f;
+}
+
+.taking-inform div > p {
+  font-size: 12px;
+}
+.taking-inform div > input {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  text-indent: 10px;
+  box-shadow: 10px 10px 20px rgba(79, 79, 79, 0.15);
+  border-radius: 2px;
+  border: 1px solid #cacaca;
+}
+
+.taking-inform div > input:hover {
+  border: 2px solid #03a9f4;
+}
+.taking-inform div > input:focus {
+  border: 2px solid #03a9f4;
+  outline: none;
+}
+
+label input {
+  margin-right: 2px;
+}
+
+.taking-inform button {
+  height: 30px;
+  border-radius: 20px;
+  background-color: #03a9f4;
+  border: 1px solid #03a9f4;
+  margin: 2px 2px;
+
+  position: relative;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.taking-inform button:hover {
+  height: 34px;
+  width: 100.5%;
+  margin: 0px;
+}
