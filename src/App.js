@@ -11,6 +11,7 @@ function App() {
       <SignUpping />
     </div>
   )
+  console.log('hello world');
 }
 
 export default App
