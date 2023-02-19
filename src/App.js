@@ -9,9 +9,10 @@ function App() {
     <div className="app">
       <Query />
       <SignUpping />
+      <div></div>
     </div>
+    
   )
-  console.log('hello world');
 }
 
 export default App
