@@ -1,0 +1,19 @@
+.button {
+    width: 195px;
+    height: 53px;
+    padding: 14px 47px;
+    background-color: $Yellow; 
+    font-family: 'Space Mono', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    outline: none;
+    border: none; 
+    border: 2px solid white;    
+}
+
+.button-hover:hover {
+    background-color: white;
+    border: 2px solid $Yellow;
+}

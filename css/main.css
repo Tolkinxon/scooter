@@ -186,6 +186,7 @@ main {
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
+  border: 2px solid red;
 }
 
 ul, ol {
@@ -211,6 +212,26 @@ h1, h2, h3, h4, h5, h6, p {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  width: 195px;
+  height: 53px;
+  padding: 14px 47px;
+  background-color: #FCB72B;
+  font-family: "Space Mono", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: center;
+  outline: none;
+  border: none;
+  border: 2px solid white;
+}
+
+.button-hover:hover {
+  background-color: white;
+  border: 2px solid #FCB72B;
 }
 
 h2 {
