@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .button {
-  width: 195px;
+  min-width: 195px;
   height: 53px;
   padding: 14px 47px;
   background-color: #FCB72B;
