@@ -151,16 +151,25 @@ summary {
   font-weight: 700;
   src: url("./../fonts/space-mono-v13-latin-700.woff2") format("woff2");
 }
+@font-face {
+  font-display: swap;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v21-latin-regular.woff2") format("woff2");
+}
 * {
   box-sizing: border-box;
 }
 
-html {
+html,
+body,
+:before,
+:after {
   height: 100%;
 }
 
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -176,6 +185,31 @@ main {
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 h2 {
