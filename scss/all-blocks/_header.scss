@@ -2,6 +2,29 @@
 
     &__container {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        div {
+            display: flex;
+            align-items: center;           
+        }
+    }
+
+    &___img {
+        width: 108px;
+        height: 29px;
+        margin-right: 58px;
+    }
+
+    &__list{
+        display: flex;
+        margin-left: 58px;
+    }
+
+    &__item + &__item {
+        margin-left: 32px;
     }
 
 }

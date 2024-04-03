@@ -181,12 +181,11 @@ main {
 }
 
 .container {
-  max-width: 1126;
+  max-width: 1126px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 10px;
   padding-right: 10px;
-  border: 2px solid red;
 }
 
 ul, ol {
@@ -234,6 +233,26 @@ h1, h2, h3, h4, h5, h6, p {
   border: 2px solid #FCB72B;
 }
 
-h2 {
-  font-family: "Space Mono";
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.header__container div {
+  display: flex;
+  align-items: center;
+}
+.header___img {
+  width: 108px;
+  height: 29px;
+  margin-right: 58px;
+}
+.header__list {
+  display: flex;
+  margin-left: 58px;
+}
+.header__item + .header__item {
+  margin-left: 32px;
 }/*# sourceMappingURL=main.css.map */
