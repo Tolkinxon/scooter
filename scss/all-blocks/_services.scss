@@ -1,0 +1,48 @@
+.services {
+    max-width: 1440px;
+    width: 100%;
+    margin-bottom: 200px;
+    background-image: url('./../../images/services-background.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 45px;
+
+ 
+    
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__item {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    &__img {
+        width: 96px;
+        height: 96px;
+        margin-bottom: 40px;
+    }
+    
+    &__heading {
+        font-family: 'Space Mono', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        letter-spacing: -1.0714285373687744px;
+        text-align: left;
+        color: $Dark_Navy;
+        margin-bottom: 27px;        
+    }
+
+    &__text {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+        color: $Dim_Grey;
+        
+    }
+}

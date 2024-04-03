@@ -267,7 +267,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero {
-  margin-bottom: 100px;
+  margin-bottom: 160px;
 }
 .hero__container {
   position: relative;
@@ -323,4 +323,45 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .hero__button {
   margin-left: 95px;
+}
+
+.services {
+  max-width: 1440px;
+  width: 100%;
+  margin-bottom: 200px;
+  background-image: url("./../../images/services-background.svg");
+  background-repeat: no-repeat;
+  background-position: 0px 45px;
+}
+.services__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.services__item {
+  max-width: 350px;
+  width: 100%;
+}
+.services__img {
+  width: 96px;
+  height: 96px;
+  margin-bottom: 40px;
+}
+.services__heading {
+  font-family: "Space Mono", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.0714285374px;
+  text-align: left;
+  color: #495567;
+  margin-bottom: 27px;
+}
+.services__text {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  color: #939CAA;
 }/*# sourceMappingURL=main.css.map */
