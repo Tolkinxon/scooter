@@ -225,11 +225,11 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
   outline: none;
   border: none;
-  border: 2px solid white;
+  border: 2px solid transparent;
 }
 
 .button-hover:hover {
-  background-color: white;
+  background-color: transparent;
   border: 2px solid #FCB72B;
 }
 
@@ -265,10 +265,10 @@ h1, h2, h3, h4, h5, h6, p {
   align-items: center;
   justify-content: left;
   padding-left: 165px;
-  background-image: url("./../../images/hero-background.png"), url("./../../images/hero-pinter1.svg"), url("./../../images/hero-pointer2.svg");
+  background-image: url("./../../images/hero-pinter1.svg"), url("../../images/hero-pointer2.svg"), url("./../../images/hero-background.png");
   background-repeat: no-repeat;
-  background-size: 1440px 650px;
-  background-position: center, 0px 353px, 705px, 353px;
+  background-size: 203px 16px, 452px 151px, 1440px 650px;
+  background-position: 0px 353px, 700px 353px, center;
 }
 .hero__background-layer {
   display: none;
