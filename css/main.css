@@ -255,4 +255,48 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .header__item + .header__item {
   margin-left: 32px;
+}
+
+.hero__container {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 165px;
+  background-image: url("./../../images/hero-background.png"), url("./../../images/hero-pinter1.svg"), url("./../../images/hero-pointer2.svg");
+  background-repeat: no-repeat;
+  background-size: 1440px 650px;
+  background-position: center, 0px 353px, 705px, 353px;
+}
+.hero__background-layer {
+  display: none;
+}
+.hero__texts-wrapper {
+  max-width: 500px;
+  width: 100%;
+}
+.hero__heading {
+  font-family: "Space Mono", sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  text-align: left;
+  margin-bottom: 40px;
+  color: white;
+}
+.hero__text {
+  color: white;
+  font-family: "Lexend Deca" sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-left: 95px;
+}
+.hero__button {
+  margin-left: 95px;
 }/*# sourceMappingURL=main.css.map */
