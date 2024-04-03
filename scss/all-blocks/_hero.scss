@@ -1,4 +1,5 @@
 .hero {
+    margin-bottom: 100px;
     &__container {
         position: relative;
         max-width: 1440px;
@@ -20,7 +21,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background-color: rgba(83, 83, 191, 0.624);
+        background-color: rgba(50, 65, 99, 0.708);
         background-image: url('./../../images/hero-pinter1.svg'), url('../../images/hero-pointer2.svg');
         background-repeat: no-repeat;
         background-size: 203px 16px, 452px 151px;

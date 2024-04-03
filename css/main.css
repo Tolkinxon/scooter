@@ -254,10 +254,21 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   margin-left: 58px;
 }
+.header__item {
+  font-family: "Space Mono", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+  text-align: left;
+  color: #939CAA;
+}
 .header__item + .header__item {
   margin-left: 32px;
 }
 
+.hero {
+  margin-bottom: 100px;
+}
 .hero__container {
   position: relative;
   max-width: 1440px;
@@ -278,7 +289,7 @@ h1, h2, h3, h4, h5, h6, p {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(83, 83, 191, 0.624);
+  background-color: rgba(50, 65, 99, 0.708);
   background-image: url("./../../images/hero-pinter1.svg"), url("../../images/hero-pointer2.svg");
   background-repeat: no-repeat;
   background-size: 203px 16px, 452px 151px;

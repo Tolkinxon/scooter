@@ -1,5 +1,5 @@
 .header {
-
+    
     &__container {
         display: flex;
         justify-content: space-between;
@@ -11,20 +11,29 @@
             align-items: center;           
         }
     }
-
+    
     &___img {
         width: 108px;
         height: 29px;
         margin-right: 58px;
     }
-
+    
     &__list{
         display: flex;
         margin-left: 58px;
     }
 
+    &__item {
+        font-family: 'Space Mono', sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: left; 
+        color: $Dim_Grey;
+    }
+    
     &__item + &__item {
         margin-left: 32px;
     }
-
+    
 }
