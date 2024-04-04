@@ -1,4 +1,4 @@
-.button {
+button {
     min-width: 195px;
     height: 53px;
     padding: 14px 47px;
@@ -14,7 +14,8 @@
     border: 2px solid transparent;    
 }
 
-.button-hover:hover {
+button:hover {
     background-color: transparent;
     border: 2px solid $Yellow;
+    color: $Yellow;
 }

@@ -1,0 +1,50 @@
+.advantages {
+    &__list {
+        width: 100%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    &__images-wrapper {
+        position: relative;
+    }
+    
+    &__img {
+        width: 445px;
+        height: 445px;
+    }
+    
+    &__text-wrapper {
+        max-width: 445px;
+        width: 100%;
+    }
+
+    &__heading {
+        font-family: 'Space Mono', sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -2.142857074737549px;
+        text-align: left;
+        color: $Dim_Grey;
+        margin-bottom: 24px;        
+    }
+
+
+    &__text {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 40px;
+        color: $Dim_Grey;
+    }
+
+
+}
