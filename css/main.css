@@ -375,6 +375,7 @@ button:hover {
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse;
+  margin-bottom: 155px;
 }
 .advantages__images-wrapper {
   position: relative;
@@ -382,6 +383,11 @@ button:hover {
 .advantages__img {
   width: 445px;
   height: 445px;
+}
+.advantages__pointer {
+  position: absolute;
+  bottom: 0px;
+  left: -130px;
 }
 .advantages__text-wrapper {
   max-width: 445px;
@@ -394,7 +400,7 @@ button:hover {
   line-height: 48px;
   letter-spacing: -2.1428570747px;
   text-align: left;
-  color: #939CAA;
+  color: #495567;
   margin-bottom: 24px;
 }
 .advantages__text {

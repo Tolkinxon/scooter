@@ -8,6 +8,7 @@
         align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse;
+        margin-bottom: 155px;
     }
 
     &__images-wrapper {
@@ -17,6 +18,12 @@
     &__img {
         width: 445px;
         height: 445px;
+    }
+
+    &__pointer {
+        position: absolute;
+        bottom: 0px;
+        left: -130px;
     }
     
     &__text-wrapper {
@@ -31,7 +38,7 @@
         line-height: 48px;
         letter-spacing: -2.142857074737549px;
         text-align: left;
-        color: $Dim_Grey;
+        color: $Dark_Navy;
         margin-bottom: 24px;        
     }
 
