@@ -1,0 +1,39 @@
+.sign-up {
+    background-color: $Dark_Navy;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    background-image: url('./../images/sign-up_background.svg');
+    background-repeat: no-repeat;
+    background-size: 1153px 347px;
+    background-position: calc(50% + 305px) calc(50% + 160px);
+
+
+    &__container {
+        max-width: 1126px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        max-width: 415px;
+        width: 100%;
+        font-family: "Space Mono", sans-serif;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -2.142857074737549px;
+        text-align: left;
+        color: white;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item:nth-child(1) {
+        margin-right: 18px;
+    }
+}

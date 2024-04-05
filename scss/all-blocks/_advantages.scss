@@ -1,70 +1,115 @@
 .advantages {
+    margin-bottom: 40px;
+    
     &__container {
         max-width: 1440px;
+        overflow: hidden;
+    }
+    
+    @mixin forAfter {
+        content: '';
+        position: absolute;
+        width: 445px;
+        height: 445px;
+        background-image: url('./../../images/advantages-round.svg');
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    
+    @mixin forBefore {
+        content: '';
+        position: absolute;
+        width: 741px;
+        height: 151px;
+        background-image: url('./../../images/advantages-pointer1.svg');
+        background-repeat: no-repeat;
+        z-index: 2;
+    }
+    
+    &__list {
         width: 100%;
         padding: 0px;
     }
-
-    &__list {
-        width: 100%;
-    }
-
+    
     &__item {
-        position: relative;
-        max-width: 1440px;
-        width: 100%;
-        > div {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-direction: row-reverse;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
         margin-bottom: 160px;
+        position: relative;
+    } 
+    
+    &__img-wrapper {
+        position: relative;
     }
-
-    .advantages__top-layer {
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        width: 50%;
-        height: 100%;
-        background-image: url('./../../images/advantages-pointer1.svg'), url('./../../images/advantages-round.svg');
-        background-repeat: no-repeat;
-        background-position: calc(0%) calc(100%), calc(100% + 340px);
+    
+    &__item:nth-child(1) {
+        .advantages__img-wrapper {
+            &:after {
+                @include forAfter;
+                left: calc(100% + 64px);
+            }
+            
+            &:before {
+                @include forBefore;
+                bottom: 0px;
+                left: -130px;
+            }
+        }   
     }
-
-
+    
     &__item:nth-child(2) {
-        > div {
-            flex-direction: row;
-        } 
-
-        .advantages__top-layer {
-            left: 0px;
-            transform: rotateY(180deg);
-            background-position: 360px calc(0%), calc(100% + 340px);
-        }
+        flex-direction: row;
+        
+        .advantages__img-wrapper {
+            &:after {
+                @include forAfter;
+                right: calc(100% + 64px);
+            }
+            
+            &:before {
+                @include forBefore;
+                transform: rotateY(180deg);
+                top: 0px;
+                right: 260px;
+            }
+        }   
     }
-
+    
     &__item:nth-child(3) {
-        .advantages__top-layer {
-            background-position: 360px calc(0% + 77px), calc(100% + 340px);
-        }
+        .advantages__img-wrapper {
+            &:after {
+                @include forAfter;
+                left: calc(100% + 64px);
+            }
+            
+            &:before {
+                @include forBefore;
+                top: 85px;
+                left: 255px;
+            }
+        }   
     }
- 
+    
+    
+    
     
     &__img {
-        position: relative;
         width: 445px;
         height: 445px;
         border-radius: 50%;
     }
-  
+    
+    
+    
+    
+    
     &__text-wrapper {
         max-width: 445px;
         width: 100%;
     }
-
+    
     &__heading {
         font-family: 'Space Mono', sans-serif;
         font-size: 48px;
@@ -75,8 +120,8 @@
         color: $Dark_Navy;
         margin-bottom: 24px;        
     }
-
-
+    
+    
     &__text {
         font-family: 'Lexend Deca', sans-serif;
         font-size: 15px;
@@ -86,6 +131,6 @@
         margin-bottom: 40px;
         color: $Dim_Grey;
     }
-
-
+    
+    
 }
