@@ -1,6 +1,7 @@
 .header {
     
     &__container {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -11,8 +12,12 @@
             align-items: center;           
         }
     }
+
+    .burger-menu {
+        display: none;
+    }
     
-    &___img {
+    &___logo {
         width: 108px;
         height: 29px;
         margin-right: 58px;
@@ -41,6 +46,31 @@
     
     &__item + &__item {
         margin-left: 32px;
+    }
+
+    @media only screen and (max-width: 375px){
+        &__container {
+            justify-content: space-between;
+            padding: 24px 32px;
+        }
+
+        .burger-menu {
+            display: block;
+        }
+
+        &___logo {
+            display: inline-block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__button {
+            display: none;
+        }
     }
     
 }
