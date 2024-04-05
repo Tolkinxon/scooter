@@ -213,7 +213,8 @@ h1, h2, h3, h4, h5, h6, p {
   overflow: hidden;
 }
 
-button {
+.button {
+  text-decoration: none;
   min-width: 195px;
   height: 53px;
   padding: 14px 47px;
@@ -229,7 +230,7 @@ button {
   border: 2px solid transparent;
 }
 
-button:hover {
+.button:hover {
   background-color: transparent;
   border: 2px solid #FCB72B;
   color: #FCB72B;
@@ -255,13 +256,17 @@ button:hover {
   display: flex;
   margin-left: 58px;
 }
-.header__item {
+.header__item a {
+  text-decoration: none;
   font-family: "Space Mono", sans-serif;
   font-size: 15px;
   font-weight: 700;
   line-height: 25px;
   text-align: left;
   color: #939CAA;
+}
+.header__item a:hover {
+  color: #FCB72B;
 }
 .header__item + .header__item {
   margin-left: 32px;
@@ -553,6 +558,9 @@ button:hover {
   line-height: 25px;
   text-align: left;
   color: #939CAA;
+}
+.footer__link:hover {
+  color: Yellow;
 }
 .footer__icon-list {
   max-width: 120px;

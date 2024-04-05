@@ -22,14 +22,21 @@
         display: flex;
         margin-left: 58px;
     }
-
-    &__item {
-        font-family: 'Space Mono', sans-serif;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 25px;
-        text-align: left; 
-        color: $Dim_Grey;
+    
+    &__item {       
+        a {
+            text-decoration: none;
+            font-family: 'Space Mono', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 25px;
+            text-align: left; 
+            color: $Dim_Grey;
+        }
+        
+        a:hover {
+            color: $Yellow
+        }
     }
     
     &__item + &__item {

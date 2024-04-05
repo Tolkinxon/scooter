@@ -40,6 +40,10 @@
         color: $Dim_Grey;
     }
 
+    &__link:hover {
+        color: Yellow;
+    } 
+
     &__icon-list {
         max-width: 120px;
         width: 100%;
