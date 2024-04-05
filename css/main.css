@@ -289,16 +289,22 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media only screen and (max-width: 375px) {
   .header__container {
-    justify-content: space-between;
+    display: block;
     padding: 24px 32px;
+  }
+  .header__container div {
+    display: flex;
+    justify-content: center;
+  }
+  .header__container div___logo {
+    width: 75.5px;
+    height: 20px;
   }
   .header .burger-menu {
     display: block;
-  }
-  .header___logo {
-    display: inline-block;
-    margin-right: auto;
-    margin-left: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .header__list {
     display: none;

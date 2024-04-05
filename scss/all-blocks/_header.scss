@@ -50,19 +50,29 @@
 
     @media only screen and (max-width: 375px){
         &__container {
-            justify-content: space-between;
+            display: block;
             padding: 24px 32px;
+
+            div {
+                display: flex;
+                justify-content: center;
+
+                &___logo {
+                    width: 75.5px;
+                    height: 20px;
+                }
+            }        
         }
 
         .burger-menu {
             display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
 
-        &___logo {
-            display: inline-block;
-            margin-right: auto;
-            margin-left: auto;
-        }
+        
+
 
         &__list {
             display: none;
