@@ -308,7 +308,7 @@ h1, h2, h3, h4, h5, h6, p {
 .header__list-button {
   display: none;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 675px) {
   .header__container {
     max-width: 100%;
     display: block;
@@ -455,6 +455,62 @@ h1, h2, h3, h4, h5, h6, p {
   width: 100%;
   margin-left: 95px;
   margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .hero__container {
+    justify-content: center;
+    padding-left: 0px;
+    background-position: -500px 0px;
+  }
+  .hero__background-layer {
+    background-size: 0px 0px, 452px 151px;
+    background-position: 0px 0px, -140px calc(100% - 40px);
+    z-index: 1;
+  }
+  .hero__texts-wrapper {
+    max-width: 573px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__heading {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    text-align: center;
+    margin-bottom: 32px;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .hero__container {
+    background-position: right;
+  }
+  .hero__background-layer {
+    background-size: 0px 0px, 452px 151px;
+    background-position: 0px 0px, -140px calc(100% - 40px);
+    z-index: 1;
+  }
+  .hero__texts-wrapper {
+    max-width: 573px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__heading {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    text-align: center;
+    margin-bottom: 32px;
+    margin-left: 0px;
+  }
 }
 
 .services {
