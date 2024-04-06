@@ -170,6 +170,7 @@ body,
 }
 
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
@@ -260,7 +261,24 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   align-items: center;
 }
+.header .menu-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
 .header .burger-menu {
+  width: 20px;
+  height: 16px;
+}
+.header .close-menu {
+  width: 18px;
+  height: 18px;
+}
+.header__background-layer {
   display: none;
 }
 .header___logo {
@@ -289,28 +307,81 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media only screen and (max-width: 375px) {
   .header__container {
+    max-width: 100%;
     display: block;
     padding: 24px 32px;
+    position: fixed;
+    z-index: 900;
+    background-color: white;
+    top: 0;
+    left: 0;
   }
   .header__container div {
     display: flex;
     justify-content: center;
   }
   .header__container div___logo {
-    width: 75.5px;
+    width: 76px;
     height: 20px;
   }
-  .header .burger-menu {
+  .header__list {
+    display: block;
+    position: absolute;
+    max-width: 256px;
+    width: 100%;
+    height: calc(100vh - 72px);
+    top: 100%;
+    left: -256px;
+    margin: 0px;
+    transform: translateX(-256px);
+    transition: 0.5s ease all;
+    background-color: #333A44;
+    flex-direction: column;
+    align-items: start;
+    z-index: 10;
+  }
+  .header__background-layer {
+    position: absolute;
+    max-width: 0%;
+    width: 100%;
+    height: calc(100vh - 72px);
+    top: 100%;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.585);
+    z-index: 9;
+  }
+  .header__item a {
+    color: #E5ECF4;
+  }
+  .header__item + .header__item {
+    margin-left: 0px;
+  }
+  .header__button {
+    display: none;
+  }
+  .header .menu-button {
     display: block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 999;
   }
-  .header__list {
+  .header .close-menu {
     display: none;
   }
-  .header__button {
+  .header.open-menu .close-menu {
+    display: block;
+  }
+  .header.open-menu .burger-menu {
     display: none;
+  }
+  .header.open-menu .header__background-layer {
+    max-width: 100%;
+    display: block;
+  }
+  .header.open-menu .header__list {
+    transform: translateX(256px);
+    transition: 0.5s ease all;
   }
 }
 
