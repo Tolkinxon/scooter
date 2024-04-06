@@ -68,6 +68,10 @@
         margin-left: 32px;
     }
 
+    &__list-button {
+        display: none;
+    }
+
     @media only screen and (max-width: 375px){
         &__container {
             max-width: 100%;
@@ -105,6 +109,13 @@
             flex-direction: column;
             align-items: start;
             z-index: 10;
+            padding: 64px 32px 24px;
+        }
+
+        &__list-button {
+            display: block;
+            position: absolute;
+            bottom: 24px;
         }
 
         &__background-layer {
@@ -126,6 +137,7 @@
 
         &__item + &__item {
             margin-left: 0px;
+            margin-top: 24px;
         }
 
         &__button {

@@ -305,6 +305,9 @@ h1, h2, h3, h4, h5, h6, p {
 .header__item + .header__item {
   margin-left: 32px;
 }
+.header__list-button {
+  display: none;
+}
 @media only screen and (max-width: 375px) {
   .header__container {
     max-width: 100%;
@@ -339,6 +342,12 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
     align-items: start;
     z-index: 10;
+    padding: 64px 32px 24px;
+  }
+  .header__list-button {
+    display: block;
+    position: absolute;
+    bottom: 24px;
   }
   .header__background-layer {
     position: absolute;
@@ -355,6 +364,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .header__item + .header__item {
     margin-left: 0px;
+    margin-top: 24px;
   }
   .header__button {
     display: none;
