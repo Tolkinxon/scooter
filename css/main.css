@@ -564,40 +564,6 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: left;
   color: #939CAA;
 }
-@media only screen and (max-width: 768px) {
-  .services {
-    margin-bottom: 145px;
-    background-image: none;
-  }
-  .services__list {
-    width: 100%;
-    flex-direction: column;
-    padding-top: 122px;
-    background-image: url("./../../images/services-background-vertical.svg");
-    background-repeat: no-repeat;
-    background-position: 42px 0px;
-  }
-  .services__item {
-    max-width: 570px;
-    width: 100%;
-    display: flex;
-    align-items: start;
-    margin-bottom: 40px;
-  }
-  .services__img {
-    width: 96px;
-    height: 96px;
-    margin-bottom: 0px;
-    margin-right: 80px;
-  }
-  .services__text-wrapper {
-    max-width: 400px;
-    width: 100%;
-  }
-  .services__text {
-    width: 100%;
-  }
-}
 
 .advantages {
   margin-bottom: 40px;

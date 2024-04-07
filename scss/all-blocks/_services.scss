@@ -44,42 +44,5 @@
         color: $Dim_Grey;
     }
 
-    @media only screen and (max-width: 768px) {
-        margin-bottom: 145px;
-        background-image: none;
-
-    &__list {
-        width: 100%;
-        flex-direction: column;
-        padding-top: 122px;
-        background-image: url('./../../images/services-background-vertical.svg');
-        background-repeat: no-repeat;
-        background-position: 42px 0px;
-    }
-
-    &__item {
-        max-width: 570px;
-        width: 100%;
-        display: flex;
-        align-items: start;
-        margin-bottom: 40px;
-    }
-
-    
-    &__img {
-        width: 96px;
-        height: 96px;
-        margin-bottom: 0px;
-        margin-right: 80px;
-    }
-
-    &__text-wrapper {
-        max-width: 400px;
-        width: 100%;
-    }
-
-    &__text {
-      width: 100%;
-    }
-    }
+   
 }
