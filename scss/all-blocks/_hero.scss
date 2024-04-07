@@ -12,7 +12,7 @@
         background-image:   url('./../../images/hero-background.png');
         background-repeat: no-repeat;
         background-size:  1440px 650px;
-        background-position: center;
+        background-position: right;
     }
     
     &__background-layer {
@@ -65,10 +65,13 @@
     }
     
     @media only screen and (max-width: 768px) {
+        margin-bottom: 0px;
         &__container {
             justify-content: center;
             padding-left: 0px;
-            background-position: -500px 0px;
+            background-image:   url('./../../images/hero-background-tablet.png');
+            background-size:  768px 650px;
+            background-size: cover;
         } 
         
         &__background-layer {
@@ -99,10 +102,14 @@
     }
     
     @media only screen and (max-width: 375px) {
+        margin-bottom: 120px;
         &__container {
-            background-position: right;
             align-items: start;
             padding-top: 115px;
+            background-image:   url('./../../images/hero-background-mobile.png');
+            background-repeat: no-repeat;
+            background-size:  cover;
+            background-position: center;
         } 
         
         &__background-layer {
