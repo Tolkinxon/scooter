@@ -4,8 +4,8 @@
     margin-bottom: 200px;
     background-image: url('./../../images/services-background.svg');
     background-repeat: no-repeat;
-    background-position: 0px 45px;
-
+    background-position: calc(50% - 250px) 45px;
+    
     
     &__list {
         width: 100%;
@@ -17,7 +17,7 @@
         max-width: 350px;
         width: 100%;
     }
-
+    
     &__img {
         width: 96px;
         height: 96px;
@@ -34,7 +34,7 @@
         color: $Dark_Navy;
         margin-bottom: 27px;        
     }
-
+    
     &__text {
         font-family: 'Lexend Deca', sans-serif;
         font-size: 15px;
@@ -43,43 +43,84 @@
         text-align: left;
         color: $Dim_Grey;
     }
-
+    
     @media only screen and (max-width: 768px) {
         margin-bottom: 145px;
         background-image: none;
-
-    &__list {
-        width: 100%;
-        flex-direction: column;
-        padding-top: 122px;
-        background-image: url('./../../images/services-background-vertical.svg');
-        background-repeat: no-repeat;
-        background-position: 42px 0px;
+        
+        &__list {
+            width: 100%;
+            flex-direction: column;
+            padding-top: 122px;
+            background-image: url('./../../images/services-background-vertical.svg');
+            background-repeat: no-repeat;
+            background-position: 42px 0px;
+        }
+        
+        &__item {
+            max-width: 570px;
+            width: 100%;
+            display: flex;
+            align-items: start;
+            margin-bottom: 40px;
+        }
+        
+        
+        &__img {
+            width: 96px;
+            height: 96px;
+            margin-bottom: 0px;
+            margin-right: 80px;
+        }
+        
+        &__text-wrapper {
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        &__text {
+            width: 100%;
+        }
     }
-
-    &__item {
-        max-width: 570px;
-        width: 100%;
-        display: flex;
-        align-items: start;
-        margin-bottom: 40px;
-    }
-
     
-    &__img {
-        width: 96px;
-        height: 96px;
-        margin-bottom: 0px;
-        margin-right: 80px;
-    }
-
-    &__text-wrapper {
-        max-width: 400px;
-        width: 100%;
-    }
-
-    &__text {
-      width: 100%;
-    }
+    @media only screen and (max-width: 512px) {
+        margin-bottom: 120px;
+        
+        &__list {
+            padding-top: 0px;
+            background-image: none;
+        }
+        
+        &__item {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 48px;
+        }
+        
+        &__item:last-child {
+            margin-bottom: 0px;
+        }
+        
+        
+        &__img {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 24px;
+            margin-right: 0px;
+        }
+        
+        
+        &__heading {
+            line-height: 28px;
+            font-size: 20px;
+            letter-spacing: -0.8928571343421936px;
+            text-align: center;
+            margin-bottom: 24px; 
+        }
+        
+        &__text {
+            text-align: center;
+        }
     }
 }
