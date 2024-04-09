@@ -750,6 +750,107 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 40px;
   color: #939CAA;
 }
+@media only screen and (max-width: 768px) {
+  .advantages {
+    margin-bottom: 104px;
+  }
+  .advantages__container {
+    max-width: 768px;
+    overflow: hidden;
+  }
+  .advantages__item {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 120px;
+  }
+  .advantages__item:nth-child(1) .advantages__img-wrapper:after {
+    content: "";
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    background-image: url("./../../images/advantages-round.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+    left: calc(100% + 64px);
+  }
+  .advantages__item:nth-child(1) .advantages__img-wrapper:before {
+    content: "";
+    position: absolute;
+    width: 741px;
+    height: 151px;
+    background-image: url("./../../images/advantages-pointer1.svg");
+    background-repeat: no-repeat;
+    z-index: 2;
+    bottom: 0px;
+    left: -130px;
+  }
+  .advantages__item:nth-child(2) {
+    flex-direction: column;
+  }
+  .advantages__item:nth-child(2) .advantages__img-wrapper:after {
+    content: "";
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    background-image: url("./../../images/advantages-round.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+    right: calc(100% + 64px);
+  }
+  .advantages__item:nth-child(2) .advantages__img-wrapper:before {
+    content: "";
+    position: absolute;
+    width: 741px;
+    height: 151px;
+    background-image: url("./../../images/advantages-pointer1.svg");
+    background-repeat: no-repeat;
+    z-index: 2;
+    transform: rotateY(180deg);
+    top: 0px;
+    right: 260px;
+  }
+  .advantages__item:nth-child(3) .advantages__img-wrapper:after {
+    content: "";
+    position: absolute;
+    width: 445px;
+    height: 445px;
+    background-image: url("./../../images/advantages-round.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+    left: calc(100% + 64px);
+  }
+  .advantages__item:nth-child(3) .advantages__img-wrapper:before {
+    content: "";
+    position: absolute;
+    width: 741px;
+    height: 151px;
+    background-image: url("./../../images/advantages-pointer1.svg");
+    background-repeat: no-repeat;
+    z-index: 2;
+    top: 85px;
+    left: 255px;
+  }
+  .advantages__img {
+    margin-bottom: 56px;
+  }
+  .advantages__text-wrapper {
+    max-width: 573px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantages__heading {
+    max-width: 457px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .advantages__text {
+    text-align: center;
+  }
+}
 
 .sign-up {
   background-color: #495567;
