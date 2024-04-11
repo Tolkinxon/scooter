@@ -4,15 +4,9 @@
 
 
     &__container,  &__text-wrapper {
-        padding: 0px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        @media only screen and (max-width: 1220px){
-            padding-left: 40px;
-            padding-right: 40px;
-        }
 
         @media only screen and (max-width: 768px) {
             max-width: 768px;
@@ -70,7 +64,7 @@
     }
 
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 620px) {
         padding: 64px 0px 88px  ;
         &__container, &__text-wrapper, &__list {
             flex-direction: column;

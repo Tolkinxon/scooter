@@ -27,12 +27,18 @@
         background-size: 203px 16px, 452px 151px;
         background-position:  0px 353px, 700px 353px;        
         z-index: 1;
+
+        @media only screen and (max-width: 1190px) {
+            background-image: url('./../../images/hero-pinter1.svg'),none; 
+        }
     }
     
     &__texts-wrapper {
         max-width: 500px;
         width: 100%;
         z-index: 2;
+        overflow: hidden;
+        background-color: transparent;
     }
     
     &__heading {
@@ -61,14 +67,13 @@
         max-width: 180px;
         width: 100%;
         margin-left: 95px;
-        margin: 0;
     }
     
     @media only screen and (max-width: 768px) {
         margin-bottom: 0px;
         &__container {
             justify-content: center;
-            padding-left: 0px;
+            padding-left: 20px;
             background-image:   url('./../../images/hero-background-tablet.png');
             background-size:  768px 650px;
             background-size: cover;
@@ -78,7 +83,14 @@
             background-size: 0px 0px, 452px 151px;
             background-position:  0px 0px, -140px calc(100% - 40px);        
             z-index: 1;
+            background-image: url('./../../images/hero-pinter1.svg'), url('../../images/hero-pointer2.svg');
+
+            @media only screen and (max-width: 572px) {
+                background-position:  0px 0px, -220px calc(100% - 40px);   
+            }
         }
+
+
         
         &__texts-wrapper {
             max-width: 573px;
@@ -99,10 +111,17 @@
             margin-bottom: 32px; 
             margin-left: 0px;       
         }
+
+        &__button {
+            margin-left: 0px;
+        }
     }
     
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 512px) {
         margin-bottom: 120px;
+    }
+
+    @media only screen and (max-width: 404px) {
         &__container {
             align-items: start;
             padding-top: 115px;
@@ -114,7 +133,11 @@
         
         &__background-layer {
             background-size: 0px 0px, 447px 138px;
-            background-position:  0px 0px, calc(100% - 240px) calc(100% - 34px);        
+            background-position:  0px 0px, calc(50% - 270px) calc(100% - 34px);
+            
+            @media only screen and (max-width: 289px) {
+                background-size: 0px 0px, 0px 0px;   
+            }
         }
         
         &__texts-wrapper {
