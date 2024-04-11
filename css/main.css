@@ -554,6 +554,8 @@ h1, h2, h3, h4, h5, h6, p {
   max-width: 1440px;
   width: 100%;
   margin-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
   background-image: url("./../../images/services-background.svg");
   background-repeat: no-repeat;
   background-position: calc(50% - 250px) 45px;
@@ -885,7 +887,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-position: calc(50% + 305px) calc(50% + 160px);
 }
 .sign-up__container {
-  max-width: 1126px;
+  max-width: 1266px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -967,6 +969,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 35px 0px;
 }
 .footer__container, .footer__text-wrapper {
+  max-width: 1266px;
   display: flex;
   align-items: center;
   justify-content: space-between;
